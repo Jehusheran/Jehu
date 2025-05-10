@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jehu Sheran's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            background-color: #000;
+            color: #f1f1f1;
+            margin: 0;
+        }
+        header, footer {
+            text-align: center;
+            padding: 32px;
+        }
+        header {
+            background-color: #111;
+        }
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        /* Sidebar styling */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 120px;
+            height: 100%;
+            background-color: #222;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #fff;
+            padding: 16px;
+            text-align: center;
+            width: 100%;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #444;
+        }
+        .sidebar a i {
+            font-size: 2rem;
+        }
+        .main-content {
+            margin-left: 120px;
+            padding: 20px;
+        }
+        /* Section styling */
+        section {
+            margin-bottom: 50px;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            color: #ccc;
+            margin-bottom: 16px;
+        }
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .skills {
+            margin: 20px 0;
+        }
+        .skills div {
+            margin-bottom: 12px;
+        }
+        .skills p {
+            margin: 0;
+        }
+        .skills .progress-bar {
+            background-color: #444;
+            height: 20px;
+            border-radius: 10px;
+        }
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .progress-bar .bar {
+            background-color: #4CAF50;
+        }
+        .skills .progress-bar .bar {
+            width: 85%;
+        }
+        /* Portfolio Grid */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        .photo-grid img {
+            border-radius: 8px;
+        }
+        /* Contact form styling */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        /* Footer Styling */
+        footer {
+            background-color: #111;
+            padding: 20px;
+        }
+        footer i {
+            font-size: 2rem;
+            color: white;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        footer i:hover {
+            color: #4CAF50;
+        }
+        footer p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" alt="Jehu Sheran">
+        <a href="#" class="home">
+            <i class="fa fa-home"></i>
+            HOME
+        </a>
+        <a href="#about" class="about">
+            <i class="fa fa-user"></i>
+            ABOUT
+        </a>
+        <a href="#photos" class="photos">
+            <i class="fa fa-eye"></i>
+            PHOTOS
+        </a>
+        <a href="#contact" class="contact">
+            <i class="fa fa-envelope"></i>
+            CONTACT
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Header -->
+        <header>
+            <h1>I'm Jehu Sheran</h1>
+            <p>Founder and CEO @WynnGen</p>
+            <img src="https://www.w3schools.com/w3images/man_smoke.jpg" alt="Jehu Sheran">
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I began my professional journey with a Diploma in Printing Technology, after which I worked for a year at Bodhi Professional Solutions Pvt. Ltd. Eager to grow and innovate further, I pursued a Bachelor's degree in Artificial Intelligence and Machine Learning (BE-AIML).</p>
+            <p>Today, I’m the Founder and CEO of WynnGen, an idea-generation company focused on solving real-world tech challenges with practical, real-time solutions. At WynnGen, I collaborate with developer companies to turn innovative concepts into working products that address current needs across industries.</p>
+            <p>Beyond my professional life, I also serve as a rector in my church — a role that keeps me grounded in purpose, service, and leadership.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>My Skills</h2>
+            <div>
+                <p>Technical Support Engineer</p>
+                <div class="progress-bar">
+                    <span class="bar" style="width: 95%"></span>
+                </div>
+            </div>
+            <div>
+                <p>Content Creator</p>
+                <div class="progress-bar">
+                    <span class="bar" style="width: 85%"></span>
+                </div>
+            </div>
+            <div>
+                <p>Web Developer</p>
+                <div class="progress-bar">
+                    <span class="bar" style="width: 80%"></span>
+                </div>
+            </div>
+            <div>
+                <p>Logical Creator</p>
+                <div class="progress-bar">
+                    <span class="bar" style="width: 80%"></span>
+                </div>
+            </div>
+            <div>
+                <p>Idea Maker</p>
+                <div class="progress-bar">
+                    <span class="bar" style="width: 95%"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="photos">
+            <h2>My Photos</h2>
+            <div class="photo-grid">
+                <img src="https://www.w3schools.com/w3images/wedding.jpg" alt="Wedding">
+                <img src="https://www.w3schools.com/w3images/rocks.jpg" alt="Rocks">
+                <img src="https://www.w3schools.com/w3images/sailboat.jpg" alt="Sailboat">
+                <img src="https://www.w3schools.com/w3images/underwater.jpg" alt="Underwater">
+                <img src="https://www.w3schools.com/w3images/chef.jpg" alt="Chef">
+                <img src="https://www.w3schools.com/w3images/wedding.jpg" alt="Wedding">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Bangalore, India</p>
+            <p>Phone: 9164737973</p>
+            <p>Email: jehusheranjs17@gmail.com</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required name="Name">
+                <input type="email" placeholder="Email" required name="Email">
+                <input type="text" placeholder="Subject" required name="Subject">
+                <textarea placeholder="Message" required name="Message"></textarea>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Follow me on:</p>
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <p>&copy; 2025 Jehu Sheran</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+

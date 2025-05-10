@@ -1,2 +1,0 @@
-# Jehu
-Portfolio
